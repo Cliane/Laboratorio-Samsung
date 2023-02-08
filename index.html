@@ -1,0 +1,73 @@
+
+<!--==============================================================================================================================-->
+<!--  AUTHOR:               Estrella Moraleda Hernández                                                                           -->
+<!--  CREATED DATE:         24-01-2023                                                                                            -->
+<!--  LAST MODIFIED DATE:   08-02-2023                                                                                            -->
+<!--  FUNCTIONALITY:        Controlar la creación de un formulario de modo que los campos introducidos tengan un formato adecuado -->
+<!--  COMMENTS:             Se han escogido ciertos aspectos estilísticos como la fuente y los colores basándose en aproximaciones
+                            sobre el documento proporcionado.                                                                    -->
+<!--==============================================================================================================================-->
+
+<!DOCTYPE html>
+<html>
+
+<!--______________________________________________________________________________________________________________________________-->
+<!--Primero declaramos el encabezado con el script que se usara para este documento y la hoja de estilo empleada -->
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css"/> 
+    <script src="index.js"></script>
+</head>
+
+<!--______________________________________________________________________________________________________________________________-->
+<!--A continuación introducimos los elementos que se mostrarán en pantalla-->
+<body>
+    
+    <form>
+      
+        <fieldset>
+
+            <h1>Create Account</h1><br/><br/>
+<!--______________________________________________________________________________________________________________________________-->
+            <label> Nombre <br/>
+            <input type="text" Id="nombre" autocomplete="off"/>
+            </label>
+            <br/>
+            <div id="textoNombre"></div>
+            <br/>
+            
+<!--______________________________________________________________________________________________________________________________-->
+            <label>Email<br/>
+            <input type="email" Id="email" autocomplete="off" title="" />
+            </label> 
+            <br/>
+            <div id="textoEmail"></div>
+            <br/>
+            
+<!--______________________________________________________________________________________________________________________________-->
+            <label>Clave<br/>
+            <input type="password" Id="clave"/> 
+            </label> 
+            <br/>
+            <div id="textoClave"></div>
+            <br/>
+
+<!--______________________________________________________________________________________________________________________________-->
+            <label>Confirme su clave<br/>
+            <input type="password" Id="confirmacion"/>
+            </label> 
+            <br/>
+            <div id="textoConfirmacion"></div>
+            <br/><br/>
+
+<!--______________________________________________________________________________________________________________________________-->
+            <button type="button" id="btn" onclick="checkData()">ENVIAR</button>
+
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+
+</html>
